@@ -45,7 +45,7 @@ public class Base64Decoder {
 		// convert the decoded binary data to string data
 		String finalDecodeStr = "";
 		for ( int i = 0; i < ( decodeBinStr.length() / 8 ); i++ ) {
-			String subString = decodeBinStr.substring(8*i, 8*(i+1));
+			String subString = decodeBinStr.substring( 8*i, 8 * (i + 1) );
 			char subConvertedChar =(char) Integer.valueOf( subString, 2 ).intValue();
 			finalDecodeStr += String.valueOf(subConvertedChar);
 		}
