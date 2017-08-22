@@ -37,7 +37,7 @@ public class Base64Decoder {
 			if ( index != -1 ){
 				decodeBinStr += String.format( "%06d", Integer.valueOf( Integer.toBinaryString( index ) ) );
 			}else{
-				System.err.println(">>Error: Input value contains exception characters.");
+				System.err.println(">>Error: Input values contain exception characters.");
 				return null;
 			}
 		}
@@ -54,7 +54,7 @@ public class Base64Decoder {
 	
 	
 	/**
-	 * The method takes a string and decoded it to bytes
+	 * The method takes a string and decoded it to bytes based on base64 rules
 	 * @param inputStr
 	 * @return byte[]
 	 */
