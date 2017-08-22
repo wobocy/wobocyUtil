@@ -21,7 +21,7 @@ public class Base64Decoder {
 		
 		// data format check
 		if( inputStr == null ){
-			return inputStr;
+			return null;
 		}
 		
 		// delete the "=" string
